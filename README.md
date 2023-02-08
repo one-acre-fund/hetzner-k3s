@@ -52,6 +52,18 @@ ___
 
 Before using the tool, be sure to have kubectl installed as it's required to install some software in the cluster to provision load balancers/persistent volumes and perform k3s upgrades.
 
+### Linux
+
+```bash
+wget https://github.com/one-acre-fund/hetzner-k3s/releases/download/v1.0/hetzner-k3s-linux-x86_64
+chmod +x hetzner-k3s-linux-x86_64
+sudo mv hetzner-k3s-linux-x86_64 /usr/local/bin/hetzner-k3s
+```
+
+### Windows
+
+At this time I recommend using the Linux binary under [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
+
 ### macOS
 
 #### With Homebrew
@@ -71,7 +83,7 @@ You need to install these dependencies first:
 ##### Intel
 
 ```bash
-wget https://github.com/vitobotta/hetzner-k3s/releases/download/v1.0.8/hetzner-k3s-mac-amd64
+wget https://github.com/one-acre-fund/hetzner-k3s/releases/download/v1.0/hetzner-k3s-mac-amd64
 chmod +x hetzner-k3s-mac-x64
 sudo mv hetzner-k3s-mac-x64 /usr/local/bin/hetzner-k3s
 ```
@@ -79,23 +91,10 @@ sudo mv hetzner-k3s-mac-x64 /usr/local/bin/hetzner-k3s
 ##### Apple Silicon / M1
 
 ```bash
-wget https://github.com/vitobotta/hetzner-k3s/releases/download/v1.0.8/hetzner-k3s-mac-arm64
+wget https://github.com/one-acre-fund/hetzner-k3s/releases/download/v1.0/hetzner-k3s-mac-arm64
 chmod +x hetzner-k3s-mac-arm
 sudo mv hetzner-k3s-mac-arm /usr/local/bin/hetzner-k3s
 ```
-
-### Linux
-
-```bash
-wget https://github.com/vitobotta/hetzner-k3s/releases/download/v1.0.8/hetzner-k3s-linux-x86_64
-chmod +x hetzner-k3s-linux-x86_64
-sudo mv hetzner-k3s-linux-x86_64 /usr/local/bin/hetzner-k3s
-```
-
-### Windows
-
-At this time I recommend using the Linux binary under [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
-
 ___
 
 ## Creating a cluster
